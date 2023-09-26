@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="org.test.saucedemo.WithOutKnownFailed"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+  <groups>
+  <define name="group1">
+  <include name="smoke"></include>
+  <include name="sanity"></include>
+  </define>
+  <define name="group2">
+  <include name="regression"></include>
+  <include name="retest"></include>
+  </define>
+  <run>
+  <exclude name="group2"></exclude>
+  </run>
+  </groups>
+    <classes>
+      <class name="org.test.saucedemo.SauceDemo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

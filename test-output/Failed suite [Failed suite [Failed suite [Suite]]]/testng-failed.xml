@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Failed suite [Failed suite [Suite]]]]">
+  <test thread-count="5" name="Test(failed)(failed)(failed)(failed)">
+    <groups>
+      <run>
+        <exclude name="group1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="org.test.saucedemo.SauceDemo">
+        <methods>
+          <include name="Test4"/>
+          <include name="AfterClass"/>
+          <include name="AfterMethodss"/>
+          <include name="BeforeClass"/>
+          <include name="BeforeMethodss"/>
+        </methods>
+      </class> <!-- org.test.saucedemo.SauceDemo -->
+    </classes>
+  </test> <!-- Test(failed)(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Suite]]]] -->
